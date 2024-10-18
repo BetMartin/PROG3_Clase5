@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Validación Ingreso</title>
+        <link rel="stylesheet" href="formato.css"/>
+        <script>
+            function validar(){
+                var mayor = document.getElementById("afirmativo").checked;
+                var menor = document.getElementById("negativo").checked;
+                <!---Preg de examne como hacer para cuando hay mas opciones  tagname-->
+                if(mayor){
+                    alert("Acceso permitido");
+                }else if (menor){
+                    alert("Acceso denegado");
+                }else{
+                    alert("Debe indicar una opcion(Si/No)");
+                }
+            }
+            
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>¿Es Mayor a 18</h1>
+        
+            <div class="opciones">
+                <p>SI </p>
+                <input type ="radio" id="afirmativo" name="respuesta"/>
+            </div>
+                
+            <div class="opciones">    
+                <p>NO</p>
+                <input type ="radio" id="negativo" name="respuesta"/>
+            </div>
+
+            <div class="container_buttons">
+                <button type="button" onclick="validar()">Validar</button>
+            </div>
+        </div>
+    </body>
+</html>

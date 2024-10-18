@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Validación Ingreso</title>
+        <link rel="stylesheet" href="formato.css"/>
+        <script>
+
+            function validar() {
+
+            var opciones = document.querySelectorAll('input[name="respuesta"]');
+            var seleccionado = false;
+
+            for (var i = 0; i < opciones.length; i++) {
+                if (opciones[i].checked) {
+                    seleccionado = true;
+                    if (opciones[i].value === "si") {
+                        alert("Acceso Permitido.");
+                    } else {
+                        alert("Acceso Denegado");
+                    }
+                    break;
+                }
+            }
+
+            if (!seleccionado) {
+                alert("Por favor, seleccione una opción.");
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>¿Es Mayor a 18</h1>
+        
+            <div class="opciones">
+                <p>SI </p>
+                <input type ="radio" name="respuesta" value="si"/>
+            </div>
+                
+            <div class="opciones">    
+                <p>NO</p>
+                <input type ="radio" name="respuesta" value="no"/>
+            </div>
+
+            <div class="container_buttons">
+                <button type="button" onclick="validar()">Validar</button>
+            </div>
+        </div>
+    </body>
+</html>

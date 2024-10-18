@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sueldo Operarios</title>
+        <script>
+            function calcularSueldo(){
+                var sueldo = parseFloat(prompt("Ingrese el sueldo:"));
+                var antiguedad = parseInt(prompt("Ingrese la antiguedad:"));
+
+                if (sueldo<500 && antiguedad>=10){
+                    document.write("Sueldo a Pagar: $"+sueldo+sueldo*0.20);
+                }else if(sueldo<500 && antiguedad<10){
+                    document.write("Sueldo a Pagar: $"+sueldo+sueldo*0.05);
+                }else{
+                    <!---No preguntar la antiguedad-->
+                    document.write("Sueldo a Pagar: $"+sueldo);
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1 onclick="calcularSueldo()">Sueldo Operario(click)</h1>
+    </body>
+    
+</html>

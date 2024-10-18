@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+    <head>
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="Formato.css">
+    </head>
+
+    <body>
+        <div class="calculadora">
+            <input type="text" id="pantalla" disabled>
+            <div class="botones">
+                <button onclick="seleccionarNumero(7)">7</button>
+                <button onclick="seleccionarNumero(8)">8</button>
+                <button onclick="seleccionarNumero(9)">9</button>
+                <button onclick="seleccionarOperador('*')">x</button>
+                <button onclick="seleccionarNumero(4)">4</button>
+                <button onclick="seleccionarNumero(5)">5</button>
+                <button onclick="seleccionarNumero(6)">6</button>
+                <button onclick="seleccionarOperador('/')">/</button>
+                <button onclick="seleccionarNumero(1)">1</button>
+                <button onclick="seleccionarNumero(2)">2</button>
+                <button onclick="seleccionarNumero(3)">3</button>
+                <button onclick="seleccionarOperador('-')">-</button>
+                <button onclick="limpiar()">C</button>
+                <button onclick="seleccionarNumero(0)">0</button>
+                <button onclick="calcular()">=</button>
+                <button onclick="seleccionarOperador('+')">+</button>
+            </div>
+        </div>
+        <script src="Operaciones.js"></script>
+    </body>
+</html>

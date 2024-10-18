@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ventana Principal</title>
+        <link rel="stylesheet" href="formato6.css"/>
+        <script>
+            function abrirVentan(){
+                window.open("modal.html","Ventana Modal","width=300px","height=600px");
+            }
+            
+            <!--- forma de hacerlo con el div-->
+            function abrirModal() {
+                document.getElementById("ventanaModal").style.display = "block";
+            }
+            function cerrarModal() {
+                document.getElementById("ventanaModal").style.display = "none";
+            }
+
+            window.onclick = function(event) {
+                var modal = document.getElementById("ventanaModal");
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+
+    </head>
+    <body>
+        <h1>Ventana Principal</h1>        
+            <div class="button">
+                <button type="button" onclick="abrirVentan()">Abrir Ventana</button>
+                <button onclick="abrirModal()">Abrir Ventana Modal</button>
+            </div>
+
+            <!-- Div para la ventana modal -->
+            <div id="ventanaModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="cerrarModal()">&times;</span>
+                    <h2>Ventana Modal</h2>
+                </div>
+            </div>
+    </body>
+</html>

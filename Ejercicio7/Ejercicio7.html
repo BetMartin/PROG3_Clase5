@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Duplicador de número</title>
+        <script>
+            function duplicar(){
+                var div = document.getElementById("numero");
+                var numeroInicial = parseInt(div.innerText);
+                div.innerText = (numeroInicial*2);
+            }
+        </script>
+    </head>
+
+    <body>
+        <div id="numero" ondblclick="duplicar()" style="font-size: 55px;">2</div>
+    </body>
+</htm>

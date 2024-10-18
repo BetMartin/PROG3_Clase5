@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meses del Anio</title>
+    <script type="text/javascript">
+        var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+
+        function mostrarMesesFor() {
+            for (var i=0; i < meses.length; i++) {
+                document.write(meses[i]+"<br>");
+            }
+        }
+
+        function mostrarMesesWhile() {
+            var i = 0;
+            while (i < meses.length) {
+                document.write(meses[i]+"<br>");
+                i++;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Meses del Año(For)</h2>
+    <script type="text/javascript">
+        mostrarMesesFor();
+    </script>
+    
+    <h2>Meses del Año(While)</h2>
+    <script type="text/javascript">
+        mostrarMesesWhile();
+    </script>
+</body>
+</html>
